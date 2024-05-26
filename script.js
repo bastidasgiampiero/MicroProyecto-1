@@ -196,6 +196,10 @@ const palabras = [
   "orca",
 ];
 
+document.addEventListener("DOMContentLoaded", () => {
+  llenarTabla();
+});
+
 function mostrarFormulario() {
   //Muestro el formulario
   var popup = document.getElementById("inicioJuego");
@@ -256,5 +260,27 @@ function obtenerPalabra(palabras) {
 }
 
 function llenarTabla() {
-  
+  let jugadores = JSON.parse(localStorage.getItem("jugadores")) || [];
+  jugadores.sort((a, b) => b.victorias - a.victorias);
+
+  let tbody = document.querySelector("table tbody");
+  tbody.innerHTML = ""; // Limpiar cualquier fila existente
+
+  jugadores.forEach((jugador) => {
+    let tr = document.createElement("tr");
+
+    let tdNombre = document.createElement("td");
+    tdNombre.textContent = jugador.nombre;
+    tr.appendChild(tdNombre);
+
+    let tdPuntos = document.createElement("td");
+    tdPuntos.textContent = jugador.puntos;
+    tr.appendChild(tdPuntos);
+
+    let tdVictorias = document.createElement("td");
+    tdVictorias.textContent = jugador.victorias;
+    tr.appendChild(tdVictorias);
+
+    tbody.appendChild(tr);
+  });
 }
