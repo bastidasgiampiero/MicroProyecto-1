@@ -1,0 +1,186 @@
+:root {
+  --padding: 0.75rem;
+  --font-size: 0.875rem;
+  --header-font-size: 1rem;
+  --input-padding: 10px;
+  --input-border: 1px solid #ccc;
+  --input-border-radius: 4px;
+  --submit-bg-color: #15b626;
+  --submit-hover-bg-color: #52c15e;
+}
+
+body {
+  margin: 0;
+  pading: 0;
+  font-family: Arial, sans-serif;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 20px;
+  background-color: #f8f8f8;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+header img {
+  height: 40px;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5em;
+  text-align: center;
+  flex: 1;
+}
+header .button1 {
+  background-color: #15b626;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+header .button1:hover {
+  background-color: #52c15e;
+}
+
+.table-container {
+  max-width: 600px;
+  margin: 20px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  border-radius: 2rem;
+}
+
+tr {
+  border-radius: 2rem;
+}
+
+table,
+tr,
+th,
+td {
+  padding: 8px;
+  text-align: center;
+  border-radius: 4px;
+  box-shadow: 0 0px 2px rgba(0, 0, 0, 0.1);
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+.btn-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  background-color: #15b626;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.button1:hover {
+  background-color: #52c15e;
+}
+
+#OscurecerFondo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+
+.inicioJuego {
+  width: 30%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.formulario {
+}
+
+.formulario label,
+.formulario input[type="text"],
+.formulario input[type="submit"] {
+  display: block;
+  margin-bottom: 1rem;
+}
+
+.formulario input[type="text"],
+.formulario input[type="submit"] {
+  width: 90%;
+  padding: var(--input-padding);
+  border: var(--input-border);
+  border-radius: var(--input-border-radius);
+  box-sizing: border-box;
+}
+
+.formulario input[type="submit"] {
+  background-color: var(--submit-bg-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.formulario input[type="submit"]:hover {
+  background-color: var(--submit-hover-bg-color);
+}
+
+.instrucciones {
+  width: 40%;
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+}
+
+.button2 {
+  background-color: #909090;
+  color: white;
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.button2:hover {
+  background-color: #c3c3c3;
+}
