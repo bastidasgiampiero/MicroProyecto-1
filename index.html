@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Micorporyecto 1</title>
+    <link rel="stylesheet" href="main.css" type="text/css" />
+  </head>
+
+  <body>
+    <header>
+      <img src="LogoUNIMET.png" />
+      <h1>Ahorcado</h1>
+      <button class="button1" onclick="mostrarInstrucciones()">
+        Instrucciones
+      </button>
+    </header>
+
+    <div class="table-container">
+      <table>
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th>Puntos Acumulados</th>
+            <th>Victorias</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="btn-container">
+      <button class="button1" id="btnInicio" onclick="mostrarFormulario()">
+        Empezar Juego
+      </button>
+    </div>
+
+    <div class="inicioJuego" id="inicioJuego">
+      <form class="formulario" id="formulario" action="game.html">
+        <h2>Formulario</h2>
+        <label>Nombre del Jugador:</label>
+        <input type="text" id="jugador" name="jugador" required />
+        <br />
+        <input type="submit" value="Empezar" />
+      </form>
+    </div>
+
+    <div class="instrucciones" id="instrucciones">
+      <h1>Instrucciones</h1>
+      <p>1. Presione el boton iniciar</p>
+      <p>2. Escriba su nombre</p>
+      <p>3. Presione el boton empezar</p>
+      <p>4. En la pagina del juego, intente adivinar la palabra</p>
+      <p>
+        5. Tendrá 5 vidas, cada vez que ingrese una letra mal, se restará una
+        vida
+      </p>
+      <p>6. Si las vidas llegan a 0, pierdes.</p>
+      <p>7. Se otorgará 3 puntos por letra adivinada</p>
+      <p>8. Si advinas la palabras ganas el juego</p>
+      <button class="button2" id="btnAtras" onclick="ocultarInstrucciones()">
+        Atras
+      </button>
+    </div>
+
+    <div id="OscurecerFondo"></div>
+    <script src="script.js"></script>
+  </body>
+</html>
