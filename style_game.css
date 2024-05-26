@@ -17,7 +17,7 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  height: calc(100vh - 200px); /* Ajusta esta altura según sea necesario */
+  height: calc(100vh - 200px); /* Ajusta esta altura segÃºn sea necesario */
 }
 
 .left-side {
