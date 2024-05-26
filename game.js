@@ -15,7 +15,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   console.log(palabra);
 
-  // Crear líneas iniciales según el largo de la palabra
+  // Crear lÃ­neas iniciales segÃºn el largo de la palabra
   palabraArray.forEach(() => {
     const line = document.createElement("div");
     line.classList.add("line");
